@@ -9,7 +9,7 @@ export function updatePinsAndRecalculateBumpers(colors, selectedIndex, pinsToSub
   // Copia profonda
   let updated = colors.map((c, i) =>
     i === selectedIndex
-      ? { ...c, pins: Math.max(1, c.pins - pinsToSubtract) }
+      ? { ...c, pins: Math.max(0, c.pins - pinsToSubtract) }
       : { ...c }
   );
 

@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 /**
  * ControlPanel component allows users to select colors, adjust pins, and update values.
- * It includes radio buttons for each color, a numeric input for pin adjustments, and a button to apply changes.
- * 
- * @param {Object} props - The component props.
- * @param {Array} props.colors - The array of color objects with { name, pins, bumper }.
- * @param {Function} props.updatePins - Function to update pins and recalculate bumpers.
  */
 const ControlPanel = ({ colors, selectedIndex, setSelectedIndex, pinsToSubtract, setPinsToSubtract, handleUpdatePins }) => {
     return (
@@ -29,7 +24,7 @@ const ControlPanel = ({ colors, selectedIndex, setSelectedIndex, pinsToSubtract,
                     Pins da sottrarre:
                     <input
                         type="number"
-                        min={1}
+                        min={0}
                         max={10}
                         value={pinsToSubtract}
                         onChange={(e) => setPinsToSubtract(Number(e.target.value))}
