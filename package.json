@@ -24,13 +24,13 @@
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1"
   },
-  "homepage": "https://github.com/yourusername/distribution-pie-app",
+  "homepage": "https://github.com/Leonardi-UIUX/distribution-pie-app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/distribution-pie-app.git"
+    "url": "git+https://github.com/Leonardi-UIUX/distribution-pie-app.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/distribution-pie-app/issues"
+    "url": "https://github.com/Leonardi-UIUX/distribution-pie-app/issues"
   },
   "browserslist": {
     "production": [
